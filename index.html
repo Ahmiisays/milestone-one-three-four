@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Editable Resume Builder | Ahmad Khan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>MileStone 1,3,4: Image Resume Builder by Ahmad Khan</h1>
+    
+    <form id="resumeForm">  
+
+        <!-- personal information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+        
+        <!-- Profile Picture -->
+         <fieldset>
+         <label for="profilePicture">Profile Picture</label>
+         <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </fieldset>
+
+
+        <!-- education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education</label>
+            <textarea id="education" name="education" rows="4" required></textarea>
+        </fieldset><br>
+
+        
+        <!-- experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea>
+        </fieldset><br>
+
+
+        <!-- skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" rows="4" required></textarea>
+        </fieldset><br>
+
+
+        <button type="submit"> Generate Resume Below</button>
+
+    </form>
+
+<br>
+    <div id="resumeOutput">
+        <!-- Resume will be generated below -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
